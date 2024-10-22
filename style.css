@@ -19,55 +19,29 @@ body {
     width: 350px;
 }
 
-.center-container {
-    color: white;
-}
-
-.image {
-    display: none;
-}
-
-.bottom-container {
-    margin-bottom: 10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .container h2 {
-    margin: 0;
-    font-size: 18px;
-    color: #6c757d;
+    font-size: 20px;
+    color: #5e5e5e;
 }
 
-.container h1 {
-    margin: 10px 0 20px;
-    font-size: 24px;
+.container h4 {
+    font-size: 16px;
     color: #1c1c1c;
 }
 
-.bottom-container h4 {
-    color: white;
-}
-
-.bottom-container h6 {
-    color: #1c1c1c;
-}
-
-label {
-    margin-top: 20px;
+.container label {
+    margin-top: 15px;
+    margin-bottom: 5px;
     display: block;
     text-align: left;
-    margin-bottom: 5px;
     font-size: 14px;
-    color: #212529;
+    color: #5e5e5e;
 }
 
-input[type="text"],
-input[type="password"] {
+.container input[type="text"] {
     width: 100%;
-    padding: 10px;
+    margin-bottom: 5px;
+    padding: 10px 0px 10px 10px;
     border-radius: 20px;
     border: 1px solid #dbe0e4;
     background: #e9f0ff;
@@ -76,14 +50,83 @@ input[type="password"] {
 
 .container button {
     width: 50%;
-    margin-top: 30px;
+    margin-top: 25px;
     padding: 10px;
     border-radius: 20px;
     border: 1px solid #dbe0e4;
     background: linear-gradient(to bottom right, #f0f4ff, #d6e0ff);
-    color: #212529;
+    color: #1c1c1c;
     font-size: 14px;
     cursor: pointer;
+    font-weight: bold;
+}
+
+.container .result {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.container .clue {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.show-center-container {
+    display: none;
+}
+
+.center-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 350px;
+    color: black;
+    text-align: justify;
+}
+
+.center-container h1 {
+    font-size: 24px;
+}
+
+.center-container h3 {
+    font-size: 18px;
+}
+
+.center-container .message {
+    margin-bottom: 20px;
+}
+
+.center-container .quote {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center-container .quote div {
+    color: #5e5e5e;
+}
+
+.show-bottom-container {
+    display: none;
+}
+
+.bottom-container {
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-container h4 {
+    color: white;
+}
+
+.bottom-container h6 {
+    color: #1c1c1c;
 }
 
 .bottom-container button {
@@ -97,19 +140,6 @@ input[type="password"] {
     cursor: pointer;
 }
 
-button i {
-    margin-right: 5px;
-}
-
-.result {
-    margin-top: 20px;
-    font-size: 12px;
-}
-
-.clue {
-    margin-top: 20px;
-    font-size: 12px;
-}
 
 @media (max-width: 400px) {
     .container {

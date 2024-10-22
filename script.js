@@ -1,36 +1,42 @@
+const body = document.body;
+const myAudio = document.getElementById("my-audio");
 const question = document.getElementById('question');
 const answerInput = document.getElementById('answer-input');
 const verifyBtn = document.getElementById('verify-btn');
 const result = document.getElementById('result');
 const clue = document.getElementById('clue');
+const ctrContainer = document.getElementById('show-center-container');
+const botContainer = document.getElementById('show-bottom-container');
 const themeBtn = document.getElementById('theme-button');
-const image = document.getElementById('image');
-const body = document.body;
-let countdownValue = 3;
+let countdownValue = 15;
 
 verifyBtn.addEventListener('click', () => {
     if (answerInput.value === '21') {
         result.style.color = 'green';
         const countdownInterval = setInterval(() => {
-            result.textContent = 'duh, tunggu '+ countdownValue +' detik berarti yawww!';
-            // clue.textContent = countdownValue;
+            result.textContent = 'Pasti anda pituk, tunggu '+ countdownValue +' detik berarti yaw!';
             countdownValue--;
             if (countdownValue < 0) {
                 clearInterval(countdownInterval);
                 countdownValue = 0;
-                clue.textContent = "kocak penjumlahan aja salah? scroll ke paling bawah";
+                question.value = "19 + 8 = ?"
+                clue.textContent = "Pituk kocak penjumlahan aja salah, scroll ke paling bawah";
+                botContainer.classList.remove('show-bottom-container');
             }
         }, 1000);
     } else {
-        result.textContent = 'jawaban salah kocak, coba lagi!';
+        result.textContent = 'Pasti anda pituk, soalnya jawaban salah. Coba lagi!';
         result.style.color = 'red';
     }
 });
 
 function toggleDarkMode() {
     body.classList.toggle('dark-mode');
-    image.classList.remove('image');
+    ctrContainer.classList.remove('show-center-container');
     question.value = "Berapa umur pipi sekarang?"
+    setTimeout(() => {
+        myAudio.play();
+    }, 5000);
 }
 
 themeBtn.addEventListener('click', toggleDarkMode);
