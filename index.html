@@ -7,26 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="display" disabled>
-        <div class="buttons">
-            <button onclick="clearDisplay()">C</button>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('/')">/</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('*')">*</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('-')">-</button>
-            <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="calculateResult()">=</button>
-            <button onclick="appendToDisplay('+')">+</button>
-        </div>
+    <div class="container">
+        <h2>Hai, selamat datang!</h2>
+        <h1>ORANG BAIK</h1>
+        <label for="question">Jawablah pertanyaan berikut:</label>
+        <input type="text" id="question" value="14 + 7 = ?" disabled>
+        <label for="answer">Jawaban:</label>
+        <input type="text" id="answer-input">
+        <button id="verify-btn">Lanjutkan</button>
+        <div class="result" id="result"></div>
+        <div id="clue" class="clue"></div>
+    </div>
+    <div class="center-container">
+        <h1>HALOOO PIPIII ;)</h1>
+        <h2>SELAMAT ULANG TAHUN YA PITUKKK</h2>
+        <h3>
+            btw hari ini aku begadang, bonus buat yang ultah gapapa lah <br><br>
+            kocak banget ko jawabannya 21 wkwkw <br>
+            21 mah kemarin, sekarang udah 22 eleuh menolak sadar<br>
+            coba scroll ke atas, tadi aku nanya apa <br><br>
+            oiya semoga di umur pipi yang ke 22 selalu dikasih kebahagiaan, panjang umur, kesehatan, dilimpahkan rezekinya, dipermudah segala urusannya, diperlancar profesinya, aamiinnn <br><br>
+            dah ah segini aja disini mah, bingung mau ngetik apa soalnya ngebut wkw <br><br>
+            lanjut di chat aja
+        </h3>
+        <img class="image" id="image" src="notification.jpg" alt="Pituk Ultah" width=100%>
+        <h3>
+            diingetin kalender wkw <br><br>
+        </h3>
+    </div>
+    <div class="bottom-container">
+        <h4>coba scroll ke tengah</h4>
+        <h6>pencet: </h6>
+        <button id="theme-button"></button>
     </div>
     <script src="script.js"></script>
 </body>
