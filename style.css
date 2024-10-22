@@ -143,20 +143,134 @@ body {
 
 @media (max-width: 400px) {
     .container {
-        padding: 20px;
+        margin-top: 5vh;
+        background: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 275px;
     }
-    .container h1 {
-        font-size: 20px;
-    }
+    
     .container h2 {
-        font-size: 16px;
+        font-size: 18px;
+        color: #5e5e5e;
     }
-    .container input[type="text"],
-    .container input[type="password"] {
+    
+    .container h4 {
+        font-size: 14px;
+        color: #1c1c1c;
+    }
+    
+    .container label {
+        margin-top: 15px;
+        margin-bottom: 5px;
+        display: block;
+        text-align: left;
+        font-size: 12px;
+        color: #5e5e5e;
+    }
+    
+    .container input[type="text"] {
+        width: 100%;
+        margin-bottom: 5px;
+        padding: 10px 0px 10px 10px;
+        border-radius: 20px;
+        border: 1px solid #dbe0e4;
+        background: #e9f0ff;
         font-size: 12px;
     }
+    
     .container button {
-        font-size: 14px;
+        width: 50%;
+        margin-top: 25px;
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid #dbe0e4;
+        background: linear-gradient(to bottom right, #f0f4ff, #d6e0ff);
+        color: #1c1c1c;
+        font-size: 12px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    .container .result {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    
+    .container .clue {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    
+    .show-center-container {
+        display: none;
+    }
+    
+    .center-container {
+        background: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.1);
+        text-align: center;
+        width: 275px;
+        color: black;
+        text-align: justify;
+    }
+    
+    .center-container h1 {
+        font-size: 20px;
+    }
+    
+    .center-container h3 {
+        font-size: 16px;
+    }
+    
+    .center-container .message {
+        margin-bottom: 20px;
+    }
+    
+    .center-container .quote {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .center-container .quote div {
+        color: #5e5e5e;
+    }
+    
+    .show-bottom-container {
+        display: none;
+    }
+    
+    .bottom-container {
+        margin-bottom: 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .bottom-container h4 {
+        color: white;
+    }
+    
+    .bottom-container h6 {
+        color: #1c1c1c;
+    }
+    
+    .bottom-container button {
+        width: 50%;
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid #dbe0e4;
+        background: linear-gradient(to bottom right, #f0f4ff, #d6e0ff);
+        color: #212529;
+        font-size: 12px;
+        cursor: pointer;
     }
 }
 
